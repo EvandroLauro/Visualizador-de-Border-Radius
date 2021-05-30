@@ -1,0 +1,26 @@
+#main {
+    border: solid black;
+    width: 360px; 
+}
+
+.fieldsetformulario {
+    width: 300px; 
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-color: black;
+}
+
+#figura {
+    margin-left: 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: 2px solid #73ad21;
+    padding: 2px;
+    width: 200px;
+    height: 150px;
+}
+
+

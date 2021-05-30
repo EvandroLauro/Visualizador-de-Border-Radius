@@ -1,27 +1,56 @@
+<!DOCTYPE html>
 <html>
+
     <head>
-        <title>Visualizador de Border-Radius</title>
+        <title>Visualizador De Raio De Borda</title>
     </head>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+
     <body>
-            <form name="formularioBorder">
-                <p># Escolha uma borda</p>
+        <div id="main">
 
-                <input type="radio" name="formMyBorder" value="radius.style.borderTopLeftRadius=">
-                <label>Top Left Radius</label><br>
+            <fieldset class="fieldsetformulario">
+                <legend>Escolha borda:</legend>       
 
-                <input type="radio" name="formMyBorder" value="radius.style.borderTopRightRadius=">
-                <label>Top Right Radius</label><br>
-                
-                <input type="radio" name="formMyBorder" value=" radius.style.borderBottomLeftRadius">
-                <label>Bottom Left Radius</label><br>
+                <form>
+                    &nbsp; &nbsp;<input type="radio" name="border" value="figura.style.borderBottomLeftRadius=">
+                    <label>Bottom Left Radius</label><br>
 
-                <input type="radio" name="formMyBorder" value="radius.style.borderBottomRightRadius=">
-                <label>Bottom Right Radius</label><br><br>
+                    &nbsp; &nbsp;<input type="radio" name="border" value="figura.style.borderBottomRightRadius=">
+                    <label>Bottom Right Radius</label><br>
 
-                <input type="text" id="valueBorder" >
-            </form>
+                    &nbsp; &nbsp;<input type="radio" name="border" value="figura.style.borderTopLeftRadius=">
+                    <label>Top Left Radius</label><br>
 
-            <br><button onclick="controllerBorder()">Mudar Borda</button>
+                    &nbsp; &nbsp;<input type="radio" name="border" value="figura.style.borderTopRightRadius=">
+                    <label>Top Right Radius</label>
+                </form>
+
+                <br>
+
+                <button onclick="trocaValorBorderRadius()">Mudar</button> <input value="Digite um numero" type="text" id="valor">
+            </fieldset>
+
+            <br>
+
+            <fieldset class="fieldsetformulario">
+                <legend>Representação da figura </legend>       
+                <div id="figura"></div>
+            </fieldset>
+
+            <br>
+
+            <fieldset class="fieldsetformulario">
+                <legend>Folha de estilo </legend>       
+                <div id="exibe"></div>
+            </fieldset>
+
+            <br>
+
+        </div>
+
     </body>
+
 </html>
